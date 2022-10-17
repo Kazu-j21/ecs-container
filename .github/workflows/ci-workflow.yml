@@ -4,7 +4,7 @@ on: [push]
 
 env:
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-  SLACK_WEBHOOK: https://hooks.slack.com/services/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 ##change this URL!!
+# SLACK_WEBHOOK: https://hooks.slack.com/services/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 ##change this URL!!
 
 jobs:
   ci:
@@ -18,7 +18,7 @@ jobs:
 
     - name: Unit Test
       run: cd ${{ github.workspace }}
-    - run: cd sample-webapp && npm install && npm run test:unit
+    - run: cd container-webapp && npm install && npm run test:unit
 
     # TODO add tests for backend and rest-api
 
