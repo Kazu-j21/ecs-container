@@ -4,7 +4,6 @@ on: [push]
 
 env:
   SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-# SLACK_WEBHOOK: https://hooks.slack.com/services/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 ##change this URL!!
 
 jobs:
   ci:
